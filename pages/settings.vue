@@ -40,6 +40,8 @@
 </template>
 
 <script setup lang="ts">
+import { useUserStore } from '~/store/userStore';
+
 const userStore = useUserStore();
 const role = computed(() => userStore.role ?? 'student');
 

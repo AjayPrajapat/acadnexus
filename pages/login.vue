@@ -53,6 +53,8 @@
 </template>
 
 <script setup lang="ts">
+import { useUserStore } from '~/store/userStore';
+
 const form = reactive({
   email: '',
   password: '',
